@@ -68,6 +68,14 @@ function snack3btn() {
     for (i = 0; i < 10; i++) {
         let userNumber = prompt("Inserisci il nuemro")
         array3.push(userNumber)
-        console.log(array3)
+
+    }
+    console.log(array3)
+
+    //somma tra loro tutti i numeri inseriti dall utente
+    let somma = 0
+    for (i = 0; i < array3.length; i++) {
+        somma + array3[i]
+        console.log(somma)
     }
 }
