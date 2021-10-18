@@ -105,3 +105,29 @@ function snack4btn() {
     }
     snack4.innerHTML = result4
 }
+
+
+////////////////////////////// SNACK 5
+const snack5 = document.querySelector(".snack5")
+let result5 = ""
+//crea un array vuoto 
+const array5 = []
+//chiedi per 6 volte all utente di inserire un numero
+
+function snack5btn() {
+
+    for (i = 0; i < 6; i++) {
+
+        let userNumber5 = parseInt(prompt("Scopri quali numeri sono pari. Inserisci un numero"))
+        if (userNumber5 % 2 == 0) {
+            array5.push(userNumber5)
+            //console.log(array5)
+        }
+
+    }
+    result5 = `<p>I numeri pari tra quelli inseriti sono: ${array5}</p>`
+    snack5.innerHTML = result5
+
+
+
+}
