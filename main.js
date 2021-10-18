@@ -151,3 +151,20 @@ function snack6btn() {
     }
 
 }
+
+//////////////////////// SNACK 7
+
+//Stampa le potenze di 2 fino a 1000.
+const snack7 = document.querySelector(".snack7")
+let result7 = ""
+function snack7btn() {
+    let calc7 = 1;
+    let i = 1;
+    while (calc7 <= 1000) {
+        calc7 = Math.pow(2, i);
+        i++;
+        result7 = `<span> ${calc7}, </span>`
+        snack7.innerHTML += result7
+        //console.log(calc7)
+    }
+}
