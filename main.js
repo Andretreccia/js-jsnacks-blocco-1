@@ -67,7 +67,7 @@ function snack3btn() {
 
     for (i = 0; i < 10; i++) {
         let userNumber = parseInt(prompt("Inserisci il numero"))
-        /* array3.push(userNumber) */
+
         //somma tra loro tutti i numeri inseriti dall utente
         somma += userNumber
         //console.log(somma)
@@ -175,9 +175,33 @@ let result8 = ""
 
 function snack8btn() {
     let userNumber8 = prompt("Inserisci un numero di 4 cifre, e ti sommerò tutte le cifre che lo compongono")
-    console.log(userNumber8[2])
-    //console.log(userNumber8)
     let calc8 = parseInt(userNumber8[0]) + parseInt(userNumber8[1]) + parseInt(userNumber8[2]) + parseInt(userNumber8[3])
     result8 = `<p>La somma delle tue cifre è: ${calc8}</p>`
     snack8.innerHTML = result8
+}
+
+//////////////////////// SNACK 9
+
+//Calcola la somma e la media dei primi 10 numeri 
+
+const snack9 = document.querySelector(".snack9")
+const snack9_1 = document.querySelector(".snack9_1")
+let result91 = ""
+let result92 = ""
+let calc91 = 0
+let calc92 = 0
+function snack9btn() {
+
+    for (i = 1; i <= 10; i++) {
+        calc91 += i
+        result91 = `<p> ${calc91} </p>`
+
+        calc92 = calc91 / i
+        //console.log(calc92)
+        result92 = `<p> ${calc92}</p>`
+    }
+    snack9.innerHTML = result91
+
+    snack9_1.innerHTML = result92
+
 }
