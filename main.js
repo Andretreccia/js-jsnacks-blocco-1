@@ -74,8 +74,34 @@ function snack3btn() {
     }
     result3 = `<p>La somma dei tuoi numeri è: ${somma} </p>`
     snack3.innerHTML = result3
-
-
 }
 
 //////////////////////////////////// SNACK 4
+//dove far apparire l esito
+const snack4 = document.querySelector(".snack4")
+
+//lista invitati 
+const array4 = ["Luca", "Faiola", "Marco", "Andrea", "Paolo", "Tiziano", "Sara", "Diletta"]
+
+function snack4btn() {
+    //Chiedi all utente il suo nome
+    let userName = prompt("Inserisci il tuo nome per scoprire se sei stato invitato alla grande festa")
+
+    let validate = 0
+
+    for (let i = 0; i <= array4.length; i++) {
+        if (userName == array4[i]) {
+            validate++
+        }
+    }
+    //stampa un messaggio differente a seconda dell'esito della ricerca
+    let result4 = ""
+
+    if (validate == 0) {
+        result4 = `<p>Ci dispiace ma sembrerebbe che lei non sia un ospite gradito alla festa del grande Gatsby</p>`
+    }
+    else {
+        result4 = `<p>Complimenti! Lei è nella lista degli invitati per la festa del grande Gatsby</p>`
+    }
+    snack4.innerHTML = result4
+}
