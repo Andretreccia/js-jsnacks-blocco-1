@@ -131,3 +131,23 @@ function snack5btn() {
 
 
 }
+////////////////////////////// SNACK 6
+
+//Stampa il cubo dei  primi N numeri dove N è il numero definito dall utente
+const snack6 = document.querySelector(".snack6")
+let result6 = ""
+let calc6 = ""
+const array6 = []
+function snack6btn() {
+    //chiedi all utente un numero
+    let userNumber6 = parseInt(prompt("Dgita un n numeri da elevare al cubo"))
+
+    for (i = 0; i < userNumber6; i++) {
+        console.log(i)
+        /* let userNumber6item = i */
+        calc6 = Math.pow(i, 3);
+        result6 = `<span> ${calc6}, </span>`
+        snack6.innerHTML += result6
+    }
+
+}
