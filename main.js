@@ -168,3 +168,16 @@ function snack7btn() {
         //console.log(calc7)
     }
 }
+////////////////////////// SNACK 8
+
+const snack8 = document.querySelector(".snack8")
+let result8 = ""
+
+function snack8btn() {
+    let userNumber8 = prompt("Inserisci un numero di 4 cifre, e ti sommerò tutte le cifre che lo compongono")
+    console.log(userNumber8[2])
+    //console.log(userNumber8)
+    let calc8 = parseInt(userNumber8[0]) + parseInt(userNumber8[1]) + parseInt(userNumber8[2]) + parseInt(userNumber8[3])
+    result8 = `<p>La somma delle tue cifre è: ${calc8}</p>`
+    snack8.innerHTML = result8
+}
