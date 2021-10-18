@@ -61,21 +61,21 @@ const snack3 = document.querySelector(".snack3")
 let array3 = []
 //crea una variabile a cui assegnare come valore il risultato
 let result3 = ""
-
+let somma = 0
 //al click del bottone 3
 function snack3btn() {
 
     for (i = 0; i < 10; i++) {
-        let userNumber = prompt("Inserisci il nuemro")
-        array3.push(userNumber)
-
+        let userNumber = parseInt(prompt("Inserisci il numero"))
+        /* array3.push(userNumber) */
+        //somma tra loro tutti i numeri inseriti dall utente
+        somma += userNumber
+        //console.log(somma)
     }
-    console.log(array3)
+    result3 = `<p>La somma dei tuoi numeri è: ${somma} </p>`
+    snack3.innerHTML = result3
 
-    //somma tra loro tutti i numeri inseriti dall utente
-    let somma = 0
-    for (i = 0; i < array3.length; i++) {
-        somma + array3[i]
-        console.log(somma)
-    }
+
 }
+
+//////////////////////////////////// SNACK 4
