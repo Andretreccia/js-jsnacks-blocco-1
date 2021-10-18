@@ -31,7 +31,7 @@ function snack1btn() {
 const snack2 = document.querySelector(".snack2")
 
 let result2 = "";
-//al click del bottone 1
+//al click del bottone 2
 function snack2btn() {
     //chiedi all utente di inserire due numeri in successione
     let fistWord = prompt("inserisci una parola");
@@ -52,4 +52,22 @@ function snack2btn() {
     }
     //stampa il risultato su schermo
     snack2.innerHTML = result2
+}
+///////////////////////////////// SNACK 3
+
+//seleziona il contenire con il quale interagire
+const snack3 = document.querySelector(".snack3")
+//crea un array per inserire i numeri dell utente
+let array3 = []
+//crea una variabile a cui assegnare come valore il risultato
+let result3 = ""
+
+//al click del bottone 3
+function snack3btn() {
+
+    for (i = 0; i < 10; i++) {
+        let userNumber = prompt("Inserisci il nuemro")
+        array3.push(userNumber)
+        console.log(array3)
+    }
 }
