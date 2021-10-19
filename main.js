@@ -171,13 +171,25 @@ function snack7btn() {
 ////////////////////////// SNACK 8
 
 const snack8 = document.querySelector(".snack8")
+let calc8 = 0
 let result8 = ""
 
 function snack8btn() {
-    let userNumber8 = prompt("Inserisci un numero di 4 cifre, e ti sommerò tutte le cifre che lo compongono")
+    const userNumber8 = prompt("inserisci un numero di 4 cifre. Ti restituirò la somma di tutte le cifre che lo compongono")
+
+    for (let i = 0; i < userNumber8.length; i++) {
+        const calc8lenght = parseInt(userNumber8.charAt(i))
+        calc8 += calc8lenght
+        //console.log(calc8)
+    }
+    result8 = `<p>La somma delle tue cifre è: ${calc8} </p>`
+    snack8.innerHTML += result8
+
+    /* let userNumber8 = prompt("Inserisci un numero di 4 cifre, e ti sommerò tutte le cifre che lo compongono")
     let calc8 = parseInt(userNumber8[0]) + parseInt(userNumber8[1]) + parseInt(userNumber8[2]) + parseInt(userNumber8[3])
     result8 = `<p>La somma delle tue cifre è: ${calc8}</p>`
-    snack8.innerHTML = result8
+    snack8.innerHTML = result8 */
+
 }
 
 //////////////////////// SNACK 9
