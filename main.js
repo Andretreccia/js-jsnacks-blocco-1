@@ -159,8 +159,8 @@ const snack7 = document.querySelector(".snack7")
 let result7 = ""
 function snack7btn() {
     let calc7 = 1;
-    let i = 1;
-    while (calc7 <= 1000) {
+    let i = 0;
+    while (calc7 < 1000) {
         calc7 = Math.pow(2, i);
         i++;
         result7 = `<span> ${calc7}, </span>`
@@ -189,7 +189,6 @@ function snack8btn() {
     let calc8 = parseInt(userNumber8[0]) + parseInt(userNumber8[1]) + parseInt(userNumber8[2]) + parseInt(userNumber8[3])
     result8 = `<p>La somma delle tue cifre è: ${calc8}</p>`
     snack8.innerHTML = result8 */
-
 }
 
 //////////////////////// SNACK 9
